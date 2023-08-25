@@ -30,18 +30,42 @@
   
 
   <section class="intro">
-      <h1 class="section__title section__title--intro">
-          The title <strong>of my project 2</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-      <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+    <h1 class="section__title section__title--intro">
+        The title : <strong>-Quizzical-</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">A Trivia Game!</p>
+    <img src="img/quizzical.png" alt="" class="intro__img">
   </section>
-  
+
   <div class="portfolio-item-individual">
-      <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-      <img src="img/portfolio-details.jpg" alt="">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-      <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+    <p>The link to <a href="https://hc-jen.github.io/quizzical/" target="_blank">Quizzical</a>.</p>
+    <p>A pop quiz game to examine the player’s extensive knowledge. Each round consists of five questions spanning a range of topics from science to literature.</p>
+    <img src="img/quizzical-1.png" alt="">
+    <hr>
+    <p><strong>Step 1</strong></p> 
+    <p>Upon clicking the "Start Quiz" button, you will encounter five single-choice questions, with each question having four corresponding answer options.</p>
+    <img src="img/quizzical-2.png" alt="">
+    <hr>
+    <p><strong>Step 2</strong></p>
+    <p>You are allowed to select only one answer for each question. Once an answer is chosen, its background color will change to blue.</p>
+    <img src="img/quizzical-3.png" alt="">
+    <hr>
+    <p><strong>Step 3</strong></p>
+    <p>After responding to all the questions and clicking the "Submit Answers" button, the background of the correct answers will turn green. On the other hand, the chosen incorrect answers will have a red background.</p>
+    <img src="img/quizzical-5.png" alt="">
+    <hr>
+    <p><strong>Step 4</strong></p>
+    <p>At the bottom of the App, there will be your score, and a "Play Again" button.</p>
+    <img src="img/quizzical-4.png" alt="">
+    <hr>
+    <p>This project involves building a quiz app using React with Emotion for styling.</p>
+    <p>Here's a concise explanation of the  <strong>techniques</strong> and <strong>logic</strong> used in each file:</p>
+    <p><strong>App.js:</strong> Defines styled components for layout and blob shapes. Manages the app's state, including trivia questions, current page, and scores. Fetches trivia data from an API using Axios. Renders different pages (StartPage and QuizPage) based on the current page state.</p>
+    <p><strong>StartPage.js:</strong> Uses styled components to create a centered start page layout. Displays a title, description, and start button. Calls the handleCurrentPageChange function to switch to the quiz page when the button is clicked.</p>
+    <p><strong>QuizPage.js:</strong> Uses styled components to create the quiz page layout. Manages state for selected answers and submission status. Maps over trivia data to generate individual Quiz components. Provides context for whether answers have been submitted. Handles answer selection, submission, and display of results and scores.</p>
+    <p><strong>Quiz.js:</strong> Uses styled components to create a question and answer layout.  Receives question and answer data as props. Displays the question and maps over answers to create Answer components. Checks and highlights selected and correct answers during different stages.</p>
+    <p><strong>Answer.js:</strong> Uses styled components to create answer buttons. Receives answer data as props. Handles click events for selecting answers. Adjusts button styles based on selected, correct, and results display states.</p>
+    <p>In summary, the project uses React to create a quiz app with different components for the start page, quiz page, questions, and answers. Emotion is used for styling, and Axios is used for API data fetching. The app handles user interactions, displays questions and answers, tracks selected answers, and displays scores and results.</p>
   </div>
   
   

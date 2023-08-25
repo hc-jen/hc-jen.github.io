@@ -30,18 +30,32 @@
   
 
   <section class="intro">
-      <h1 class="section__title section__title--intro">
-          The title <strong>of my project 2</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-      <img src="img/portfolio-01.jpg" alt="" class="intro__img">
-  </section>
-  
-  <div class="portfolio-item-individual">
-      <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-      <img src="img/portfolio-details.jpg" alt="">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-      <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+    <h1 class="section__title section__title--intro">
+        The title : <strong>-Realtime Weather App-</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">A weather App covering across Taiwan.</p>
+    <img src="img/realtime-weather-app.png" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>The link to <a href="https://hc-jen.github.io/realtime-weather-app/" target="_blank">Realtime Weather App</a>.</p>
+    <p>Fetching real-time weather data from Taiwan Open Weather Data platform to
+        build a weather App covering all the cities and counties in Taiwan. The switch
+        between the dark and light themes determined by the time of sunrise and sunset</p>
+    <img src="img/realtime-weather-app 1.png" alt="" >
+    <hr>
+    <p><strong>Step 1</strong></p> 
+    <p>Upon clicking the cog image located in the top right corner, a pop-up list of cities and counties in Taiwan will appear, allowing the user to make selections.</p>
+    <img src="img/realtime-weather-app 2.png" alt="">
+    <img src="img/realtime-weather-app 3.png" alt="">
+    <hr>
+
+    <p>Here are some <strong>functions</strong> and <strong>logic</strong> behind the app:</p>
+    <p><strong>State Management with React Hooks:</strong> The code uses various React hooks like useState and useEffect to manage and update the state of components dynamically based on user interactions and fetched data.</p>
+    <p><strong>Styled Components:</strong> Styled components are utilized to create reusable and styled UI components. The code uses the styled function from the @emotion/styled library to define component styles using CSS-in-JS.</p>
+    <p><strong>Theme Switching and Conditional Rendering:</strong> The app supports both light and dark themes. The ThemeProvider from the @emotion/react library allows dynamic theming based on user preferences. The app conditionally renders components based on the current page or moment (day/night) to display appropriate weather information and icons.</p>
+    <p><strong>Functional Component Composition:</strong> The components are organized into functional components that receive props and render UI based on those props, enhancing code modularity and reusability.</p>
+    <p><strong>Asynchronous Operations:</strong> The app handles asynchronous operations like data fetching using promises and async/await to ensure smooth user experience and accurate data display.</p>
   </div>
   
   
