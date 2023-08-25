@@ -393,6 +393,10 @@ header {
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  text-align: center;
 }
 
 .portfolio__img {
