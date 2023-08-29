@@ -37,9 +37,9 @@
     <img src="img/Movie Fight.png" alt="" class="intro__img">
 </section>
 
-<div class="portfolio-item-individual">
-    <p><strong>This is still a work in progress</strong>. The link will be provided once the project is finished.</p>
-    <p>There will be two input search bar for the user to compare two movies in various aspects.</p>
+  <div class="portfolio-item-individual">
+    <p>The link to <a href="https://hc-jen.github.io/movie-fight/" target="_blank">Movie Fight</a>.</p>
+    <p>There will be two input search bars for the user to compare two movies in various aspects.</p>
     <img src="img/Movie Fight 1.png" alt="">
     <hr>
     <p><strong>Step 1</strong></p> 
@@ -47,20 +47,27 @@
     <img src="img/Movie Fight 2.png" alt="">
     <hr>
     <p><strong>Step 2</strong></p>
-    <p>When the user clicks on one of the options from the menu, the movie's details will be showcased. These details encompass information such as the genre, North America box office earnings, and rating.</p>
+    <p>When the user clicks on one of the options from the menu, the movie's details will be showcased. These details encompass information such as the genre, North America box office earnings, and ratings.</p>
     <img src="img/Movie Fight 3.png" alt="">
     <hr>
     <p><strong>Step 3</strong></p>
-    <p>Alternatively, if the user clicks outside of the menu, the menu will be closed.</p>
+    <p>Alternatively, if the user clicks outside of the menu before chosing a movie, the menu will be closed.</p>
     <img src="img/Movie Fight 4.png" alt="">
     <hr>
     <p><strong>Step 4</strong></p>
-    <p>Once the user selects two movies, the "Run Comparison" button will become visible.</p>
+    <p>Once the user selects two movies, the App will autimatically show which movie wins in each category.</p>
     <img src="img/Movie Fight 5.png" alt="">
     <hr>
-    <p><strong>Step 5</strong></p>
+    <p>This project involves building a Movies Comparison App using React with regular CSS for styling.</p>
+    <p>Here's a concise explanation of the  <strong>techniques</strong> and <strong>logic</strong> used in each file:</p>
     <p>Upon clicking the "Run Comparison" button, a winner board will be displayed, revealing which movie emerges victorious in each category.</p>
-    <img src="img/Movie Fight 6.png" alt="">
+    <p><strong>App.js:</strong> Manages the state of selected movies, tutorial visibility, and trigger for showing summaries. Renders the application header, autocomplete search areas, movie summaries, and a tutorial section based on state values.</p>
+    <p><strong>Autocomplete.js:</strong> Detects clicks outside of the component to close the dropdown menu. Handles input changes, fetches movie data, and displays search results in a dropdown menu. Passes selected movie data to parent component when a movie is chosen.</p>
+    <p><strong>MovieOption.js:</strong> Represents an individual movie option within the autocomplete dropdown. Displays the movie's title, year, and poster image. Handles clicks on the movie option, fetching more details using the OMDB API, and passing the selected movie data back to the parent component.</p>
+    <p><strong>Summary.js:</strong> Displays a summary of individual movie details. Renders movie information, awards, box office, metascore, IMDb rating, and IMDb votes.</p>
+    <p><strong>NewSummary.js:</strong> Displays a comparison summary between the two selected movies. Displays movie information, including title, year, genre, and plot, along with relevant statistics such as awards, box office, metascore, IMDb rating, and IMDb votes. Applies conditional styling to highlight the winner in each statistical category based on comparison results.</p>
+    <p><strong>fetchData.js:</strong> Contains a utility function that fetches movie data from the OMDB API based on a search term. Uses axios to make the API request and returns an array of movie results or an empty array if no results are found.</p>
+    <p>Overall, this code creates a React application for comparing movie details and displaying summary information in a user-friendly interface. The components interact to fetch movie data, display search results, and visualize comparison summaries.</p>
     <hr>
   </div>
   
