@@ -38,35 +38,36 @@
   </section>
   
   <div class="portfolio-item-individual">
-      <p>The link to <a href="https://hc-jen.github.io/Tenzies/" target="_blank">Tenzies</a>.</p>
-      <p>"Tenzies" is adapted from "Tenzi", a popular dice game that involves rolling and matching dice to achieve a certain pattern or combination. </p>
-      <img src="img/Tenzies 1.png" alt="">
-      <hr>
-      <p><strong>Step 1</strong></p> 
-      <p>When the player selects a specific number and clicks on it, the corresponding dice associated with that number will change its color to green.</p>
-      <img src="img/Tenzies 2.png" alt="">
-      <hr>
-      <p><strong>Step 2</strong></p>
-      <p>After the player clicks the "Roll" button, all the dice except the green one will shuffle and display new numbers.</p>
-      <img src="img/Tenzies 3.png" alt="">
-      <hr>
-      <p><strong>Step 3</strong></p>
-      <p>Continue selecting the number you initially chose and then proceed to shuffle the dice in order to obtain another number of your choice.</p>
-      <img src="img/Tenzies 4.png" alt="">
-      <hr>
-      <p><strong>Step 4</strong></p>
-      <p>When the player successfully gathers all the dice displaying the chosen number, a confetti effect will be triggered to celebrate the victory. Additionally, the "Roll" button will be transformed into a "New Game" button.</p>
-      <p>When the player's count number is lower the Best Score, it will be the new Best Score, which is stored in the local storage.</p>
-      <img src="img/Tenzies 5.png" alt="">
-      <hr>
-      <p>Here are some <strong>functions</strong> and <strong>logic</strong> behind the app:</p>
-      <p><strong>State Management using React Hooks:</strong> The useState hook is used to manage the state of various variables within the application. presentGame, dice, tenzies, and bestScore are all managed using this technique. The state allows for dynamic changes in the UI based on user interactions.</p>
-      <p><strong>Effect Hook:</strong> The useEffect hook is employed to monitor changes in the dice state. When all dice are held and have the same value, the game detects a win condition ("Tenzies"). This effect triggers when the dice state changes.</p>
-      <p><strong>Generating New Dice:</strong> The generateNewDie function generates a new dice object with a random value between 1 and 6 and a unique ID using the nanoid library. The allNewDice function populates the dice state with an initial set of 10 dice.</p>
-      <p><strong>Holding Dice:</strong> The generateNewDie function generates a new dice object with a random value between 1 and 6 and a unique ID using the nanoid library. The allNewDice function populates the dice state with an initial set of 10 dice.</p>
-      <p><strong>Generating New Dice:</strong> The holdDice function toggles the isHeld property of a specific die, which allows the user to freeze the value of that die between rolls.</p>
-      <p><strong>Handling Game Over: </strong> The handleGameOver function updates the bestScore state and stores it in local storage if the player's score is better than the previous best score.</p>
-    </div>
+    <p>Stacks: React.js, JavaScript, CSS, RWD</p>
+    <p>The link to <a href="https://hc-jen.github.io/Tenzies/" target="_blank">Tenzies</a>.</p>
+    <p>"Tenzies" is adapted from "Tenzi", a popular dice game that involves rolling and matching dice to achieve a certain pattern or combination. </p>
+    <img src="img/Tenzies 1.png" alt="">
+    <hr>
+    <p><strong>Step 1</strong></p> 
+    <p>When the player selects a specific number and clicks on it, the corresponding dice associated with that number will change its color to green.</p>
+    <img src="img/Tenzies 2.png" alt="">
+    <hr>
+    <p><strong>Step 2</strong></p>
+    <p>After the player clicks the "Roll" button, all the dice except the green one will shuffle and display new numbers.</p>
+    <img src="img/Tenzies 3.png" alt="">
+    <hr>
+    <p><strong>Step 3</strong></p>
+    <p>Continue selecting the number you initially chose and then proceed to shuffle the dice in order to obtain another number of your choice.</p>
+    <img src="img/Tenzies 4.png" alt="">
+    <hr>
+    <p><strong>Step 4</strong></p>
+    <p>When the player successfully gathers all the dice displaying the chosen number, a confetti effect will be triggered to celebrate the victory. Additionally, the "Roll" button will be transformed into a "New Game" button.</p>
+    <p>When the player's count number is lower the Best Score, it will be the new Best Score, which is stored in the local storage.</p>
+    <img src="img/Tenzies 5.png" alt="">
+    <hr>
+    <p>Here are some <strong>functions</strong> and <strong>logic</strong> behind the app:</p>
+    <p><strong>State Management using React Hooks:</strong> The useState hook is used to manage the state of various variables within the application. presentGame, dice, tenzies, and bestScore are all managed using this technique. The state allows for dynamic changes in the UI based on user interactions.</p>
+    <p><strong>Effect Hook:</strong> The useEffect hook is employed to monitor changes in the dice state. When all dice are held and have the same value, the game detects a win condition ("Tenzies"). This effect triggers when the dice state changes.</p>
+    <p><strong>Generating New Dice:</strong> The generateNewDie function generates a new dice object with a random value between 1 and 6 and a unique ID using the nanoid library. The allNewDice function populates the dice state with an initial set of 10 dice.</p>
+    <p><strong>Holding Dice:</strong> The generateNewDie function generates a new dice object with a random value between 1 and 6 and a unique ID using the nanoid library. The allNewDice function populates the dice state with an initial set of 10 dice.</p>
+    <p><strong>Generating New Dice:</strong> The holdDice function toggles the isHeld property of a specific die, which allows the user to freeze the value of that die between rolls.</p>
+    <p><strong>Handling Game Over: </strong> The handleGameOver function updates the bestScore state and stores it in local storage if the player's score is better than the previous best score.</p>
+  </div>
   
   
   <!-- Footer -->
